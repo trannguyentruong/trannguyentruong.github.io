@@ -219,11 +219,11 @@ body {
 	float: right;
 	width: 25%;
 	padding: 10px;
-	height: 95px;
 }
 
 .column img {
 	opacity: 0.8; 
+	height: 75px ;
 	cursor: pointer; 
 }
 
