@@ -7,7 +7,6 @@
 	--page-bg: #F5F5F5 ;
 	--dark-text: #ff6666;
 	--baseline: 12px;
-
 	--book-title: 'Tulpen One', sans-serif;
 	--title: 'Cormorant Garamond', serif;
 	--body: 'Cormorant Garamond', serif;
@@ -54,9 +53,6 @@ body {
 	-webkit-transform: rotateY(0deg);
 			transform: rotateY(0deg);
 	-webkit-transition: -webkit-transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: -webkit-transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
 	-webkit-transform-origin: 0% 0%;
 			transform-origin: 0% 0%;
 	background-color: var(--page-bg);
@@ -215,10 +211,6 @@ body {
 	display: none; 	
 }
 .book input[type="radio"]:checked + .book__page {
-	-webkit-transition: -webkit-transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-		transition: -webkit-transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-		transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-		transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
 	-webkit-transform: rotateY(-180deg);
 		transform: rotateY(-180deg);
 }
@@ -227,9 +219,9 @@ body {
 	float: right;
 	width: 25%;
 	padding: 10px;
+	height: 95px;
 }
 
-/* Style the images inside the grid */
 .column img {
 	opacity: 0.8; 
 	cursor: pointer; 
@@ -240,10 +232,6 @@ body {
 	opacity: 1;
 }
 
-
-/* The expanding image container */
-
-/* Expanding image text */
 #imgtext {
 	border: 5px solid red;
 	background-color: #FFFFCC; 
@@ -255,7 +243,6 @@ body {
 	font-family: "Indie Flower";
 }
 
-/* Closable button inside the expanded image */
 .closebtn {
 	position: absolute;
 	top: 10px;
